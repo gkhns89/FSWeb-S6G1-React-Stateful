@@ -51,16 +51,17 @@ import { useState } from "react";
 
 export default function Sayac() {
   /* ADIM 1 buraya*/
-
   const [sayici, setSayici] = useState(0);
 
   const artirici = () => {
-    /* ADIM 4 buraya */
+    setSayici(sayici + 1);
   };
   const azaltici = () => {
-    /* ADIM 5 */
+    setSayici(sayici - 1);
   };
-  const reset = () => {};
+  const reset = () => {
+    setSayici(0);
+  };
 
   const stil = {
     fontSize: "1.5em",
