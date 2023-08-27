@@ -51,7 +51,8 @@ import { useState } from "react";
 
 export default function Sayac() {
   /* ADIM 1 buraya*/
-  const { sayici, setSayici } = useState(0);
+
+  const [sayici, setSayici] = useState(0);
 
   const artirici = () => {
     /* ADIM 4 buraya */
@@ -72,7 +73,7 @@ export default function Sayac() {
     <div className="widget-counter container">
       <h2>Sayaç</h2>
       <div id="sayici" style={stil}>
-        Sayı {sayici} {/* ADIM 3  buraya*/}
+        Sayı {sayici} {sayici % 2 === 0 ? "Çift" : "Tek"}
       </div>
       <div>
         <button id="artirici" onClick={artirici}>
