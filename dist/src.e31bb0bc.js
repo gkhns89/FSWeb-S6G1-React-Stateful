@@ -28963,9 +28963,9 @@ function Sayac() {
   var stil = {
     fontSize: "1.5em",
     marginBottom: "0.3em",
-    color: "royalblue" /* ADIM 2 */
+    /* ADIM 2 */
+    color: sayici % 2 === 0 ? "royalblue" : "crimson"
   };
-
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "widget-counter container"
   }, /*#__PURE__*/_react.default.createElement("h2", null, "Saya\xE7"), /*#__PURE__*/_react.default.createElement("div", {
